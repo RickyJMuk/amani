@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Details - Mary & Amani</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/board.jpg') center/cover;
+            color: white;
+            padding: 8rem 0;
+            margin-top: 56px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #dee2e6;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .map-container {
+            height: 400px;
+            margin: 2rem 0;
+        }
+        
+        .venue-details {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .nav-link {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #333;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">M & A</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#story">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1 class="display-4">Wedding Details</h1>
+            <p class="lead">Join us for our special day</p>
+        </div>
+    </header>
+
+    <!-- Event Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="venue-details">
+                        <h2>The Venue</h2>
+                        <p class="lead">Word of Faith Church Webuye</p>
+                        <address>
+                            <i class="fas fa-map-marker-alt me-2"></i> 123 Wedding Lane<br>
+                            Loveville, ST 12345
+                        </address>
+                        <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> venue@grandplaza.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="map" class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.592950377555!2d34.757193073816005!3d0.608991363511603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMzYnMzIuNCJOIDM0wrA0NSczNS4yIkU!5e0!3m2!1sen!2ske!4v1730233082660!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Schedule of Events</h2>
+            <div class="timeline">
+                <div class="row timeline-item">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="timeline-content">
+                            <h4>4:00 PM - Ceremony</h4>
+                            <p>Join us as we exchange vows in the Grand Plaza Gardens</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row timeline-item">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="timeline-content">
+                            <h4>5:00 PM - Cocktail Hour</h4>
+                            <p>Enjoy drinks and hors d'oeuvres in the Sunset Terrace</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row timeline-item">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="timeline-content">
+                            <h4>6:00 PM - Reception</h4>
+                            <p>Dinner, dancing, and celebration in the Grand Ballroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row timeline-item">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="timeline-content">
+                            <h4>11:00 PM - Farewell</h4>
+                            <p>Send off the happy couple as they begin their new journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy;Mary & Amani</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
