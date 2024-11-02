@@ -15,6 +15,44 @@
             margin-top: 56px;
         }
 
+        .view-more-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.view-more-link:hover {
+    color: inherit;
+    transform: translateY(-5px);
+}
+
+.hover-effect {
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+    background: linear-gradient(145deg, #f8f9fa, #ffffff);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.fa-camera-retro {
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.view-more-link:hover .fa-camera-retro {
+    color: #0d6efd;
+    transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+    .view-more-link {
+        margin: 0 1rem;
+    }
+}
+
         .gallery-container {
             padding: 2rem 0;
         }
@@ -141,6 +179,7 @@
                     <button type="submit" class="btn btn-primary">Upload Photos</button>
                 </form>
             </div> -->
+
 
             <!-- Gallery Content -->
             <div class="tab-content" id="galleryContent">
@@ -393,6 +432,22 @@
             </div>
         </div>
     </div>
+    
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <a href="https://setoffmediaphotography.pixieset.com/bramwelandmary/" target="_blank" class="view-more-link d-block">
+                    <div class="p-4 rounded-3 shadow-sm hover-effect">
+                        <i class="fas fa-camera-retro fa-2x mb-3"></i>
+                        <h4 class="mb-2">View Complete Photo Collection</h4>
+                        <p class="text-muted mb-0">Explore our full wedding gallery with downloadable high-resolution photos</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Footer -->
     <footer>
